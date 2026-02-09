@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   }
 
   const { error } = await supabase
-    .from('submissions')
+    .from('entries')
     .insert([{ value }]);
 
   if (error) {
