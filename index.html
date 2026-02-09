@@ -151,7 +151,7 @@
     if (!value) return;
 
     try {
-      await fetch('/api/submit', {
+      await fetch('submit.js', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ value })
